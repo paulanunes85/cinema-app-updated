@@ -38,7 +38,9 @@ This document maps recommended resources from awesome-copilot that align with Ci
 
 ## 🛠️ Recommended Skills
 
-### 1. **javascript-typescript-jest** ⭐⭐⭐ (PRIORITY)
+### Community Skills (Awesome Copilot)
+
+#### 1. **javascript-typescript-jest** ⭐⭐⭐ (PRIORITY)
 **Relevance**: High  
 **Source**: `awesome-copilot/skills/javascript-typescript-jest/SKILL.md`  
 **Stack**: Jest + Vitest + React Testing Library
@@ -54,15 +56,7 @@ This document maps recommended resources from awesome-copilot that align with Ci
 
 ---
 
-### 2. **typescript-upgrade** ⭐⭐
-**Relevance**: Medium  
-**Purpose**: TypeScript version upgrades, type safety improvements, strict mode migration.
-
-**When relevant**: If you need to upgrade TypeScript 5 or enforce stricter type checking.
-
----
-
-### 3. **refactor-plan** ⭐⭐
+#### 2. **refactor-plan** ⭐⭐
 **Relevance**: Medium  
 **Purpose**: Systematic refactoring guidance, code quality improvements.
 
@@ -70,9 +64,95 @@ This document maps recommended resources from awesome-copilot that align with Ci
 
 ---
 
-### 4. **typescript-migration** ⭐
+#### 3. **typescript-upgrade** ⭐⭐
+**Relevance**: Medium  
+**Purpose**: TypeScript version upgrades, type safety improvements, strict mode migration.
+
+**When relevant**: If you need to upgrade TypeScript 5 or enforce stricter type checking.
+
+---
+
+#### 4. **typescript-migration** ⭐
 **Relevance**: Low (only if adding existing JS libraries)  
 **Purpose**: Migrate JavaScript code to TypeScript.
+
+---
+
+### CineFlow Custom Skills (Project-Specific)
+
+#### 1. **collaborative-editing** ⭐⭐⭐ (PRIORITY)
+**Relevance**: High for CineFlow  
+**Location**: `.github/skills/collaborative-editing.skill.md`
+**Purpose**: Real-time collaborative editing patterns using WebSockets, presence tracking, optimistic updates.
+
+**When to use**:
+- Implementing user presence (who's viewing this objective?)
+- Building collaborative cursors/annotations
+- Synchronizing state across multiple clients
+- Handling conflict resolution
+
+**Example**:
+```
+Load collaborative-editing skill for implementing real-time presence 
+in multi-user objective editing.
+```
+
+---
+
+#### 2. **zustand-tanstack-integration** ⭐⭐⭐ (PRIORITY)
+**Relevance**: High for CineFlow  
+**Location**: `.github/skills/zustand-tanstack-integration.skill.md`
+**Purpose**: Master integration between Zustand stores and TanStack Query.
+
+**When to use**:
+- Synchronizing global state (Zustand) with server state (TanStack Query)
+- Handling mutations that update both caches and stores
+- Preventing state duplication
+- Building efficient cache invalidation
+- Implementing optimistic updates with rollback
+
+**Example**:
+```
+Load zustand-tanstack-integration skill when setting up stores 
+and queries for new features.
+```
+
+---
+
+#### 3. **autosave-patterns** ⭐⭐⭐ (PRIORITY)
+**Relevance**: High for CineFlow  
+**Location**: `.github/skills/autosave-patterns.skill.md`
+**Purpose**: Build reliable autosave workflows with 800ms debounce, error handling, visual feedback.
+
+**When to use**:
+- Adding autosave to forms and input fields
+- Implementing periodic state synchronization
+- Handling connection failures gracefully
+- Providing real-time feedback to users
+
+**Example**:
+```
+Load autosave-patterns skill when implementing 800ms debounce 
+for form persistence.
+```
+
+---
+
+#### 4. **permission-patterns** ⭐⭐⭐ (PRIORITY)
+**Relevance**: High for CineFlow  
+**Location**: `.github/skills/permission-patterns.skill.md`
+**Purpose**: Implement permission checking using `usePermissions` hook. Never duplicate logic.
+
+**When to use**:
+- Conditionally rendering UI based on user role
+- Protecting component interactions
+- Guarding API calls and mutations
+- Implementing audit logging
+
+**Example**:
+```
+Load permission-patterns skill when adding feature access control.
+```
 
 ---
 

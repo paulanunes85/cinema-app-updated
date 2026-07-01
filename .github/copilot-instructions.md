@@ -58,16 +58,35 @@ Load these agents for domain expertise:
 
 ## 🛠️ Recommended Skills
 
-Load these skills for specialized workflows:
+### CineFlow Custom Skills (Project-Specific)
 
-### javascript-typescript-jest (For Testing)
-**When**: Writing tests with Vitest + React Testing Library
-**Coverage**: Unit tests, async patterns, mocking, component testing
-**Activate**: "Load javascript-typescript-jest skill for testing..."
+These skills are tailored to CineFlow Studio architecture and patterns:
 
-### refactor-plan (For Large Changes)
-**When**: Refactoring components or features
-**Coverage**: Systematic refactoring, code quality improvements
+1. **collaborative-editing** — Real-time presence, optimistic updates, conflict resolution
+   - Load when: Implementing multi-user editing, presence tracking
+   - Location: `.github/skills/collaborative-editing.skill.md`
+
+2. **zustand-tanstack-integration** — Master Zustand + TanStack Query sync
+   - Load when: Building stores, queries, mutations, cache invalidation
+   - Location: `.github/skills/zustand-tanstack-integration.skill.md`
+
+3. **autosave-patterns** — 800ms debounce, error handling, visual feedback
+   - Load when: Implementing autosave forms
+   - Location: `.github/skills/autosave-patterns.skill.md`
+
+4. **permission-patterns** — `usePermissions` hook, access control
+   - Load when: Adding role-based UI controls and permission checks
+   - Location: `.github/skills/permission-patterns.skill.md`
+
+### Community Skills (Awesome Copilot)
+
+Integrated community skills complement the custom ones:
+
+- **javascript-typescript-jest** — Vitest + React Testing Library patterns
+- **refactor-plan** — Systematic refactoring guidance  
+- **typescript-upgrade** — TS version upgrades and strict mode
+
+See `.github/AWESOME_COPILOT_RECOMMENDATIONS.md` for full skill matrix and integration details.
 
 ## 📋 Contextual Instructions
 
